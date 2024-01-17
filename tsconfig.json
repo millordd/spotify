@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "pretty": true,
+    "types": ["vite-plugin-svgr/client"],
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "importHelpers": true,
+    "allowSyntheticDefaultImports": true,
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+		"strict": true,
+		/* strict mode enables the following rules: */
+		"alwaysStrict": true,
+		"noImplicitAny": true,
+		"strictNullChecks": true,
+		"strictPropertyInitialization": true,
+		"strictFunctionTypes": true,
+		"noImplicitThis": true,
+		"strictBindCallApply": true,
+
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noErrorTruncation": false,
+
+    "baseUrl": ".",
+    "paths": {
+      "@app/*": ["./src/app/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@entities/*": ["./src/entities/*"],
+      "@features/*": ["./src/entities/*"],
+      "@widgets/*": ["./src/entities/*"],
+      "@shared/*": ["./src/shared/*"],
+
+    },
+  },
+  "include": ["src", "vite.config.mjs"],
+  "exclude": ["node_modules", "**/dist"],
+}
