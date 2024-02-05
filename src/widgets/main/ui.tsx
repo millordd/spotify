@@ -1,10 +1,10 @@
 import { useState } from 'react';
 
 import { Anchor, Card, Grid, Image, Overlay, Text } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
+// import { useDisclosure } from '@mantine/hooks';
 
 export const Main = () => {
-  const [visible, toggle] = useDisclosure();
+  // const [visible, toggle] = useDisclosure();
   const [overlay, setOverlay] = useState<number | null>(null);
   return (
     <div className="mt-1 p-2">

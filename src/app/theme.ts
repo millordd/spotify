@@ -1,7 +1,7 @@
 import type {
   CSSVariablesResolver,
   MantineColorsTuple,
-  MantineThemeOverride,
+  // MantineThemeOverride,
 } from '@mantine/core';
 import { createTheme, rem, useMantineColorScheme } from '@mantine/core';
 
